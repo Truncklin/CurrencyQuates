@@ -61,52 +61,50 @@ Duration="0:0:0.10" />
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid >
         <Grid.Background>
             <ImageBrush 
                 ImageSource="\background.jpg" Opacity="0.75"/>
         </Grid.Background>
-        <Border Name="BorderOne"
-                BorderThickness="1" Margin="130,217,489,150" >
+        <Border Name="BorderOne" VerticalAlignment="Center" HorizontalAlignment="Center"
+                BorderThickness="1" Margin="0,350,550,0" Width="250" Height="150">
             <Border.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </Border.BorderBrush>
             <Border.Background>
                 <SolidColorBrush Color="#FFFFFBFB" Opacity="0.48"/>
             </Border.Background>
-            <TextBlock x:Name="Text2" Margin="0" Text="***" FontSize="36" TextAlignment="Center">
+            <TextBlock x:Name="Text2"  Margin="0" Text="***" FontSize="36" TextAlignment="Center">
 
             </TextBlock>
         </Border>
-        <Border
-                BorderThickness="1" Margin="493,217,126,150">
+        <Border Width="250" Height="150" VerticalAlignment="Center" HorizontalAlignment="Center"
+                BorderThickness="1" Margin="550,350,0,0">
             <Border.BorderBrush>
                 <SolidColorBrush Color="Black" Opacity="0.5"/>
             </Border.BorderBrush>
             <Border.Background>
                 <SolidColorBrush Color="#FFFFFBFB" Opacity="0.48"/>
             </Border.Background>
-            <TextBlock x:Name="Text1" Margin="0" Text="***" FontSize="36" TextAlignment="Center">
-                
-            </TextBlock>
+            <TextBlock x:Name="Text1" Width="250" FontSize="36" TextAlignment="Center" Height="150" VerticalAlignment="Top" Text="***"/>
         </Border>
-        <TextBox Name="QuotaTwo" Margin="493,155,0,0"
+        <TextBlock Name="HintComboBox" Margin="850,110,0,0"
+HorizontalAlignment="Left"
+     TextWrapping="Wrap"
+     VerticalAlignment="Top"
+     Width="168" FontFamily="Arial Narrow" Height="40" TextAlignment="Center" FontSize="14" FontWeight="Bold">
+            <TextBlock.Background>
+                <SolidColorBrush Color="#FF524B4B" Opacity="0.495"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+        <TextBlock Margin="200,28,200,0" x:Name="TextError" FontSize="14" Height="96" VerticalAlignment="Top" Text=""/>
+        <ComboBox Name="QuotaTwo" Margin="850,154,0,0" SelectedItem="item"
     HorizontalAlignment="Left"
-         TextWrapping="Wrap"
          Text="Введите валюту"
          VerticalAlignment="Top"
-         Width="110" BorderBrush="Black" FontFamily="Bahnschrift SemiBold Condensed"/>
-        <Button x:Name ="TrigerTwo"
-Style="{DynamicResource ComboboxButton}"
-HorizontalAlignment="Left"
-Margin="598,154,0,0"
-VerticalAlignment="Top"
-Height="18" Width="23" IsDefault="True" Opacity="1">
-            <Button.Background>
-                <ImageBrush ImageSource="/EnterButton.png" Stretch="UniformToFill"/>
-            </Button.Background>
-        </Button>
-        <TextBox Name="QuotaOne" Margin="130,155,0,0"
+         Width="168" BorderBrush="Black" FontFamily="Bahnschrift Light" Height="21" FontSize="14"/>
+        <TextBox Name="QuotaOne" Margin="450,154,0,0"
     HorizontalAlignment="Left"
          TextWrapping="Wrap"
          Text="Введите валюту"
@@ -115,9 +113,9 @@ Height="18" Width="23" IsDefault="True" Opacity="1">
         <Button x:Name ="TrigerOne"
 Style="{DynamicResource ComboboxButton}"
 HorizontalAlignment="Left"
-Margin="234,154,0,0"
+Margin="554,154,0,0"
 VerticalAlignment="Top"
-Height="18" Width="23" IsDefault="True" Opacity="1">
+Height="18" Width="24" IsDefault="True" Opacity="1">
             <Button.Background>
                 <ImageBrush ImageSource="/EnterButton.png" Stretch="UniformToFill"/>
             </Button.Background>

@@ -10,6 +10,6 @@ namespace CurrencyQuotes
     internal class CurrencyData
     {
         [JsonProperty("rates")]
-        public Dictionary<string, decimal> Rates { get; set; }
+        public Dictionary<string, float> add { get; set; }
     }
 }
